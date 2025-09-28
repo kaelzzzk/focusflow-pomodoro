@@ -32,3 +32,5 @@ Você pode testar a aplicação online aqui:
 Este projeto é **Open Source** e estamos abertos a sugestões e melhorias!
 
 O FocusFlow está licenciado sob a **Licença MIT** (consulte o arquivo `LICENSE` para mais detalhes), permitindo que você use, modifique e distribua o código livremente.
+
+
