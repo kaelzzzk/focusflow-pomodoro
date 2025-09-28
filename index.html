@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusFlow | Cronômetro Pomodoro Minimalista</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍅</text></svg>">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1405519191964427"
+     crossorigin="anonymous"></script> 
+</head>
+<body>
+
+    <main class="app-container">
+        <div class="mode-selector">
+            <button id="pomodoro-mode" class="mode-button active" data-time="25">Foco</button>
+            <button id="short-break-mode" class="mode-button" data-time="5">Curta</button>
+            <button id="long-break-mode" class="mode-button" data-time="15">Longa</button>
+        </div>
+
+        <div class="timer-display">
+            <span id="minutes">25</span>:<span id="seconds">00</span>
+        </div>
+
+        <div class="timer-controls">
+            <button id="start-btn" class="control-btn primary">INICIAR</button>
+            <button id="pause-btn" class="control-btn secondary hidden">PAUSAR</button>
+            <button id="reset-btn" class="control-btn secondary hidden">RESETAR</button>
+        </div>
+        
+        <div class="monetization-area">
+            <p>Gerencie seu tempo. Comece a focar.</p>
+            <div class="ad-placeholder">
+            </div>
+        </div>
+
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
