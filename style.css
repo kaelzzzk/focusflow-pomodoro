@@ -1,0 +1,143 @@
+/* Variáveis de Cores para o Dark Mode (Fácil de Mudar) */
+:root {
+    --bg-color: #1a1a2e; /* Fundo Escuro Suave */
+    --card-bg: #22253f; /* Fundo do Container */
+    --text-color: #e4e6eb; /* Texto Claro */
+    --accent-color: #ff6a7d; /* Cor de Destaque (Vermelho/Rosa Foco) */
+    --secondary-color: #5d5d78; /* Botões Secundários */
+    --font-family: 'Poppins', sans-serif;
+}
+
+/* Base e Estilo de Fundo */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    transition: background-color 0.3s;
+}
+
+/* Container Principal do Aplicativo */
+.app-container {
+    background-color: var(--card-bg);
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Sombra Profissional */
+    text-align: center;
+    width: 90%;
+    max-width: 450px;
+}
+
+/* 1. Seleção de Modo */
+.mode-selector {
+    display: flex;
+    justify-content: space-around;
+    background: var(--bg-color);
+    padding: 8px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.mode-button {
+    background: transparent;
+    border: none;
+    color: var(--secondary-color);
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+
+.mode-button:hover {
+    color: var(--text-color);
+}
+
+.mode-button.active {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    box-shadow: 0 4px 10px rgba(255, 106, 125, 0.4);
+}
+
+/* 2. Display do Cronômetro (O Centro das Atenções) */
+.timer-display {
+    font-size: 6rem; /* GIGANTE */
+    font-weight: 700;
+    margin: 40px 0;
+    letter-spacing: 5px;
+}
+
+/* Responsividade do Tempo (para não quebrar em celulares) */
+@media (max-width: 400px) {
+    .timer-display {
+        font-size: 5rem;
+        margin: 30px 0;
+    }
+}
+
+/* 3. Botões de Controle */
+.timer-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.control-btn {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+}
+
+.control-btn.primary {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    box-shadow: 0 4px 15px rgba(255, 106, 125, 0.5);
+}
+
+.control-btn.primary:hover {
+    background-color: #ff8699;
+}
+
+.control-btn.secondary {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.control-btn.secondary:hover {
+    background-color: #7a7a96;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* 4. Área de Monetização (Anúncio Discreto) */
+.monetization-area {
+    margin-top: 40px;
+    padding-top: 15px;
+    border-top: 1px solid var(--secondary-color);
+    font-size: 0.8rem;
+    color: var(--secondary-color);
+}
+
+.ad-placeholder {
+    margin-top: 10px;
+    height: 50px; /* Altura padrão para um banner */
+    background-color: rgba(93, 93, 120, 0.2); /* Fundo sutil para o AdSense */
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed var(--secondary-color);
+}
